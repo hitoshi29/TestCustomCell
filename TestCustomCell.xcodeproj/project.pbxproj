@@ -19,6 +19,11 @@
 		042ADFF818DC340C006B1261 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042ADFE018DC340B006B1261 /* UIKit.framework */; };
 		042AE00018DC340C006B1261 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 042ADFFE18DC340C006B1261 /* InfoPlist.strings */; };
 		042AE00218DC340C006B1261 /* TestCustomCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 042AE00118DC340C006B1261 /* TestCustomCellTests.m */; };
+		042AE00D18DC3424006B1261 /* TACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042AE00C18DC3424006B1261 /* TACell.m */; };
+		042AE00F18DC3440006B1261 /* TACell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042AE00E18DC3440006B1261 /* TACell.xib */; };
+		042AE01618DC36D5006B1261 /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042AE01418DC36D5006B1261 /* TopViewController.m */; };
+		042AE01718DC36D5006B1261 /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042AE01518DC36D5006B1261 /* TopViewController.xib */; };
+		042AE01A18DC42EF006B1261 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 042AE01918DC42EF006B1261 /* background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,13 @@
 		042ADFFD18DC340C006B1261 /* TestCustomCellTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestCustomCellTests-Info.plist"; sourceTree = "<group>"; };
 		042ADFFF18DC340C006B1261 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		042AE00118DC340C006B1261 /* TestCustomCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCustomCellTests.m; sourceTree = "<group>"; };
+		042AE00B18DC3424006B1261 /* TACell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACell.h; sourceTree = "<group>"; };
+		042AE00C18DC3424006B1261 /* TACell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACell.m; sourceTree = "<group>"; };
+		042AE00E18DC3440006B1261 /* TACell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TACell.xib; sourceTree = "<group>"; };
+		042AE01318DC36D5006B1261 /* TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopViewController.h; sourceTree = "<group>"; };
+		042AE01418DC36D5006B1261 /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopViewController.m; sourceTree = "<group>"; };
+		042AE01518DC36D5006B1261 /* TopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopViewController.xib; sourceTree = "<group>"; };
+		042AE01918DC42EF006B1261 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../../../Users/ohshiro/Desktop/background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,13 @@
 		042ADFD018DC340B006B1261 = {
 			isa = PBXGroup;
 			children = (
+				042AE01818DC42C9006B1261 /* img */,
+				042AE01318DC36D5006B1261 /* TopViewController.h */,
+				042AE01418DC36D5006B1261 /* TopViewController.m */,
+				042AE01518DC36D5006B1261 /* TopViewController.xib */,
+				042AE00E18DC3440006B1261 /* TACell.xib */,
+				042AE00B18DC3424006B1261 /* TACell.h */,
+				042AE00C18DC3424006B1261 /* TACell.m */,
 				042ADFE218DC340B006B1261 /* TestCustomCell */,
 				042ADFFB18DC340C006B1261 /* TestCustomCellTests */,
 				042ADFDB18DC340B006B1261 /* Frameworks */,
@@ -142,6 +161,14 @@
 				042ADFFE18DC340C006B1261 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		042AE01818DC42C9006B1261 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				042AE01918DC42EF006B1261 /* background.png */,
+			);
+			name = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +246,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042AE01718DC36D5006B1261 /* TopViewController.xib in Resources */,
+				042AE01A18DC42EF006B1261 /* background.png in Resources */,
 				042ADFE718DC340B006B1261 /* InfoPlist.strings in Resources */,
 				042ADFEF18DC340C006B1261 /* Images.xcassets in Resources */,
+				042AE00F18DC3440006B1261 /* TACell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042AE01618DC36D5006B1261 /* TopViewController.m in Sources */,
 				042ADFED18DC340C006B1261 /* AppDelegate.m in Sources */,
 				042ADFE918DC340C006B1261 /* main.m in Sources */,
+				042AE00D18DC3424006B1261 /* TACell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
