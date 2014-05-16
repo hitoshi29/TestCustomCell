@@ -6,6 +6,7 @@
 //  Copyright (c) 2014年 wappen. All rights reserved.
 //
 
+#import "DetailViewController.h"
 #import "TACell.h"
 
 @implementation TACell
@@ -26,8 +27,6 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
-    NSLog(@"test");
-    // Configure the view for the selected state
 }
 
 -(void) setHighlighted:(BOOL)highlighted animated:(BOOL)animated

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface TopViewController : UITableViewController
-
+// cell events
+- (void)didTouchToAnswerButton:(UIButton *)sender event:(UIEvent *)event;
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "TopViewController.h"
+#import "DetailViewController.h"
 #import "TACell.h"
 
 @interface TopViewController (){
@@ -55,29 +56,31 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
     return 50;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    TACell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[TACell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
+
+    // ボタンのタッチイベント
+    [cell.toAnswer addTarget: self
+                      action: @selector( didTouchToAnswerButton : event: )
+          forControlEvents: UIControlEventTouchUpInside];
     
-    // Configure the cell...
     // セルの背景色を透明にする
     cell.backgroundColor = [UIColor clearColor];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;
 }
@@ -141,22 +144,40 @@
 }
 */
 
-/*
+
 #pragma mark - Table view delegate
 
-// In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here, for example:
-    // Create the next view controller.
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+//    [tableView deselectRowAtIndexPath:indexPath animated:YES]; // 選択状態の解除
+//    //cell.backgroundColor = [UIColor clearColor];  //非選択状態の色をセット
+//    // Navigation logic may go here, for example:
+//    // Create the next view controller.
+//    DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+//
+//    // Push the view controller.
+//    [self.navigationController pushViewController:detailViewController animated:YES];
+}
 
-    // Pass the selected object to the new view controller.
+- (void)didTouchToAnswerButton:(UIButton *)sender event: (UIEvent *)event
+{
+    NSIndexPath *indexPath = [self indexPathForControlEvent:event];
+    //NSIndexPath* indexPath = [self.tableView indexPathForCell:cell];
+        NSString *messageString = [NSString stringWithFormat:@"Button at section %d row %d was tapped.", indexPath.section, indexPath.row];
+
+    NSLog(@"%@", messageString);
+    DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
     
     // Push the view controller.
     [self.navigationController pushViewController:detailViewController animated:YES];
 }
- 
- */
+
+// UIControlEventからタッチ位置のindexPathを取得する
+- (NSIndexPath *)indexPathForControlEvent:(UIEvent *)event {
+    UITouch *touch = [[event allTouches] anyObject];
+    CGPoint p = [touch locationInView:self.tableView];
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:p];
+    return indexPath;
+}
 
 @end

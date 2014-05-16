@@ -19,11 +19,13 @@
 		042ADFF818DC340C006B1261 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042ADFE018DC340B006B1261 /* UIKit.framework */; };
 		042AE00018DC340C006B1261 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 042ADFFE18DC340C006B1261 /* InfoPlist.strings */; };
 		042AE00218DC340C006B1261 /* TestCustomCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 042AE00118DC340C006B1261 /* TestCustomCellTests.m */; };
-		042AE00D18DC3424006B1261 /* TACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042AE00C18DC3424006B1261 /* TACell.m */; };
 		042AE00F18DC3440006B1261 /* TACell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042AE00E18DC3440006B1261 /* TACell.xib */; };
 		042AE01618DC36D5006B1261 /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042AE01418DC36D5006B1261 /* TopViewController.m */; };
 		042AE01718DC36D5006B1261 /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042AE01518DC36D5006B1261 /* TopViewController.xib */; };
 		042AE01A18DC42EF006B1261 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 042AE01918DC42EF006B1261 /* background.png */; };
+		04A3734718F92C3700FE7516 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A3734518F92C3700FE7516 /* DetailViewController.m */; };
+		04A3734818F92C3700FE7516 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A3734618F92C3700FE7516 /* DetailViewController.xib */; };
+		04A3734A19071CD600FE7516 /* TACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A3734919071CD600FE7516 /* TACell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +56,15 @@
 		042ADFFF18DC340C006B1261 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		042AE00118DC340C006B1261 /* TestCustomCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCustomCellTests.m; sourceTree = "<group>"; };
 		042AE00B18DC3424006B1261 /* TACell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACell.h; sourceTree = "<group>"; };
-		042AE00C18DC3424006B1261 /* TACell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACell.m; sourceTree = "<group>"; };
 		042AE00E18DC3440006B1261 /* TACell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TACell.xib; sourceTree = "<group>"; };
 		042AE01318DC36D5006B1261 /* TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopViewController.h; sourceTree = "<group>"; };
 		042AE01418DC36D5006B1261 /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopViewController.m; sourceTree = "<group>"; };
 		042AE01518DC36D5006B1261 /* TopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopViewController.xib; sourceTree = "<group>"; };
 		042AE01918DC42EF006B1261 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../../../Users/ohshiro/Desktop/background.png; sourceTree = "<group>"; };
+		04A3734418F92C3700FE7516 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		04A3734518F92C3700FE7516 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		04A3734618F92C3700FE7516 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		04A3734919071CD600FE7516 /* TACell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,13 +94,16 @@
 		042ADFD018DC340B006B1261 = {
 			isa = PBXGroup;
 			children = (
+				04A3734418F92C3700FE7516 /* DetailViewController.h */,
+				04A3734518F92C3700FE7516 /* DetailViewController.m */,
+				04A3734618F92C3700FE7516 /* DetailViewController.xib */,
 				042AE01818DC42C9006B1261 /* img */,
 				042AE01318DC36D5006B1261 /* TopViewController.h */,
 				042AE01418DC36D5006B1261 /* TopViewController.m */,
 				042AE01518DC36D5006B1261 /* TopViewController.xib */,
 				042AE00E18DC3440006B1261 /* TACell.xib */,
+				04A3734919071CD600FE7516 /* TACell.m */,
 				042AE00B18DC3424006B1261 /* TACell.h */,
-				042AE00C18DC3424006B1261 /* TACell.m */,
 				042ADFE218DC340B006B1261 /* TestCustomCell */,
 				042ADFFB18DC340C006B1261 /* TestCustomCellTests */,
 				042ADFDB18DC340B006B1261 /* Frameworks */,
@@ -247,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				042AE01718DC36D5006B1261 /* TopViewController.xib in Resources */,
+				04A3734818F92C3700FE7516 /* DetailViewController.xib in Resources */,
 				042AE01A18DC42EF006B1261 /* background.png in Resources */,
 				042ADFE718DC340B006B1261 /* InfoPlist.strings in Resources */,
 				042ADFEF18DC340C006B1261 /* Images.xcassets in Resources */,
@@ -269,10 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A3734718F92C3700FE7516 /* DetailViewController.m in Sources */,
 				042AE01618DC36D5006B1261 /* TopViewController.m in Sources */,
 				042ADFED18DC340C006B1261 /* AppDelegate.m in Sources */,
+				04A3734A19071CD600FE7516 /* TACell.m in Sources */,
 				042ADFE918DC340C006B1261 /* main.m in Sources */,
-				042AE00D18DC3424006B1261 /* TACell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +485,7 @@
 				042AE00718DC340C006B1261 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		042AE00818DC340C006B1261 /* Build configuration list for PBXNativeTarget "TestCustomCellTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +494,7 @@
 				042AE00A18DC340C006B1261 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

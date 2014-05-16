@@ -11,5 +11,7 @@
 @interface TACell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UITextView *content;
+@property (weak, nonatomic) IBOutlet UIButton *toAnswer;
+
 
 @end
