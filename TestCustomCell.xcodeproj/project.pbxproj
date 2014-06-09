@@ -22,10 +22,20 @@
 		042AE00F18DC3440006B1261 /* TACell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042AE00E18DC3440006B1261 /* TACell.xib */; };
 		042AE01618DC36D5006B1261 /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042AE01418DC36D5006B1261 /* TopViewController.m */; };
 		042AE01718DC36D5006B1261 /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042AE01518DC36D5006B1261 /* TopViewController.xib */; };
-		042AE01A18DC42EF006B1261 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 042AE01918DC42EF006B1261 /* background.png */; };
+		047B0F511926368900389BB0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047B0F501926368900389BB0 /* CFNetwork.framework */; };
+		047B0F531926369E00389BB0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047B0F521926369E00389BB0 /* SystemConfiguration.framework */; };
+		047B0F55192636A900389BB0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047B0F54192636A900389BB0 /* Security.framework */; };
 		04A3734718F92C3700FE7516 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A3734518F92C3700FE7516 /* DetailViewController.m */; };
 		04A3734818F92C3700FE7516 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A3734618F92C3700FE7516 /* DetailViewController.xib */; };
 		04A3734A19071CD600FE7516 /* TACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A3734919071CD600FE7516 /* TACell.m */; };
+		04D8260719404C3E00B70134 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D8260619404C3E00B70134 /* background.png */; };
+		04D8260C1940649400B70134 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D8260B1940649400B70134 /* Constants.m */; };
+		04D826101944718D00B70134 /* ExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D8260E1944718D00B70134 /* ExplanationViewController.m */; };
+		04D826111944718D00B70134 /* ExplanationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D8260F1944718D00B70134 /* ExplanationViewController.xib */; };
+		04D8261A1945F1F400B70134 /* NAModalSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D826151945F1F400B70134 /* NAModalSheet.m */; };
+		04D8261B1945F1F400B70134 /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D826171945F1F400B70134 /* UIImage+BoxBlur.m */; };
+		04D8261C1945F1F400B70134 /* UIImage+screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D826191945F1F400B70134 /* UIImage+screenshot.m */; };
+		04D8261E1945F2A700B70134 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D8261D1945F2A700B70134 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,11 +70,26 @@
 		042AE01318DC36D5006B1261 /* TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopViewController.h; sourceTree = "<group>"; };
 		042AE01418DC36D5006B1261 /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopViewController.m; sourceTree = "<group>"; };
 		042AE01518DC36D5006B1261 /* TopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopViewController.xib; sourceTree = "<group>"; };
-		042AE01918DC42EF006B1261 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../../../Users/ohshiro/Desktop/background.png; sourceTree = "<group>"; };
+		047B0F501926368900389BB0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		047B0F521926369E00389BB0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		047B0F54192636A900389BB0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		04A3734418F92C3700FE7516 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		04A3734518F92C3700FE7516 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		04A3734618F92C3700FE7516 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		04A3734919071CD600FE7516 /* TACell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACell.m; sourceTree = "<group>"; };
+		04D8260619404C3E00B70134 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../background.png; sourceTree = "<group>"; };
+		04D8260A1940649400B70134 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		04D8260B1940649400B70134 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		04D8260D1944718D00B70134 /* ExplanationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExplanationViewController.h; sourceTree = "<group>"; };
+		04D8260E1944718D00B70134 /* ExplanationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExplanationViewController.m; sourceTree = "<group>"; };
+		04D8260F1944718D00B70134 /* ExplanationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExplanationViewController.xib; sourceTree = "<group>"; };
+		04D826141945F1F400B70134 /* NAModalSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAModalSheet.h; sourceTree = "<group>"; };
+		04D826151945F1F400B70134 /* NAModalSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAModalSheet.m; sourceTree = "<group>"; };
+		04D826161945F1F400B70134 /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
+		04D826171945F1F400B70134 /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
+		04D826181945F1F400B70134 /* UIImage+screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+screenshot.h"; sourceTree = "<group>"; };
+		04D826191945F1F400B70134 /* UIImage+screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+screenshot.m"; sourceTree = "<group>"; };
+		04D8261D1945F2A700B70134 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +97,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D8261E1945F2A700B70134 /* Accelerate.framework in Frameworks */,
+				047B0F55192636A900389BB0 /* Security.framework in Frameworks */,
+				047B0F531926369E00389BB0 /* SystemConfiguration.framework in Frameworks */,
+				047B0F511926368900389BB0 /* CFNetwork.framework in Frameworks */,
 				042ADFDF18DC340B006B1261 /* CoreGraphics.framework in Frameworks */,
 				042ADFE118DC340B006B1261 /* UIKit.framework in Frameworks */,
 				042ADFDD18DC340B006B1261 /* Foundation.framework in Frameworks */,
@@ -94,6 +123,11 @@
 		042ADFD018DC340B006B1261 = {
 			isa = PBXGroup;
 			children = (
+				04D826121945F0DD00B70134 /* lib */,
+				04D8260D1944718D00B70134 /* ExplanationViewController.h */,
+				04D8260E1944718D00B70134 /* ExplanationViewController.m */,
+				04D8260F1944718D00B70134 /* ExplanationViewController.xib */,
+				04D82608194058EA00B70134 /* Config */,
 				04A3734418F92C3700FE7516 /* DetailViewController.h */,
 				04A3734518F92C3700FE7516 /* DetailViewController.m */,
 				04A3734618F92C3700FE7516 /* DetailViewController.xib */,
@@ -123,6 +157,10 @@
 		042ADFDB18DC340B006B1261 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04D8261D1945F2A700B70134 /* Accelerate.framework */,
+				047B0F54192636A900389BB0 /* Security.framework */,
+				047B0F521926369E00389BB0 /* SystemConfiguration.framework */,
+				047B0F501926368900389BB0 /* CFNetwork.framework */,
 				042ADFDC18DC340B006B1261 /* Foundation.framework */,
 				042ADFDE18DC340B006B1261 /* CoreGraphics.framework */,
 				042ADFE018DC340B006B1261 /* UIKit.framework */,
@@ -174,9 +212,40 @@
 		042AE01818DC42C9006B1261 /* img */ = {
 			isa = PBXGroup;
 			children = (
-				042AE01918DC42EF006B1261 /* background.png */,
+				04D8260619404C3E00B70134 /* background.png */,
 			);
 			name = img;
+			sourceTree = "<group>";
+		};
+		04D82608194058EA00B70134 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				04D8260A1940649400B70134 /* Constants.h */,
+				04D8260B1940649400B70134 /* Constants.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		04D826121945F0DD00B70134 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				04D826131945F1F400B70134 /* NAModalSheet */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		04D826131945F1F400B70134 /* NAModalSheet */ = {
+			isa = PBXGroup;
+			children = (
+				04D826141945F1F400B70134 /* NAModalSheet.h */,
+				04D826151945F1F400B70134 /* NAModalSheet.m */,
+				04D826161945F1F400B70134 /* UIImage+BoxBlur.h */,
+				04D826171945F1F400B70134 /* UIImage+BoxBlur.m */,
+				04D826181945F1F400B70134 /* UIImage+screenshot.h */,
+				04D826191945F1F400B70134 /* UIImage+screenshot.m */,
+			);
+			name = NAModalSheet;
+			path = "../../../../Users/ohshiro/Downloads/NAModalSheet-master/NAModalSheet";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,8 +324,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				042AE01718DC36D5006B1261 /* TopViewController.xib in Resources */,
+				04D8260719404C3E00B70134 /* background.png in Resources */,
+				04D826111944718D00B70134 /* ExplanationViewController.xib in Resources */,
 				04A3734818F92C3700FE7516 /* DetailViewController.xib in Resources */,
-				042AE01A18DC42EF006B1261 /* background.png in Resources */,
 				042ADFE718DC340B006B1261 /* InfoPlist.strings in Resources */,
 				042ADFEF18DC340C006B1261 /* Images.xcassets in Resources */,
 				042AE00F18DC3440006B1261 /* TACell.xib in Resources */,
@@ -279,10 +349,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A3734718F92C3700FE7516 /* DetailViewController.m in Sources */,
+				04D8261C1945F1F400B70134 /* UIImage+screenshot.m in Sources */,
 				042AE01618DC36D5006B1261 /* TopViewController.m in Sources */,
 				042ADFED18DC340C006B1261 /* AppDelegate.m in Sources */,
+				04D826101944718D00B70134 /* ExplanationViewController.m in Sources */,
 				04A3734A19071CD600FE7516 /* TACell.m in Sources */,
 				042ADFE918DC340C006B1261 /* main.m in Sources */,
+				04D8261B1945F1F400B70134 /* UIImage+BoxBlur.m in Sources */,
+				04D8261A1945F1F400B70134 /* NAModalSheet.m in Sources */,
+				04D8260C1940649400B70134 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 @interface TopViewController : UITableViewController
+
+@property(strong, nonatomic) IBOutlet NSArray *items;
+//外部参照用プロパティ
+@property (nonatomic, retain) NSDictionary *examData;
+
 // cell events
 - (void)didTouchToAnswerButton:(UIButton *)sender event:(UIEvent *)event;
 @end

@@ -9,11 +9,11 @@
 #import "TopViewController.h"
 #import "DetailViewController.h"
 #import "TACell.h"
+#import "Constants.h"
 
 @interface TopViewController (){
-
+    NSDictionary* examData;
 }
-
 @end
 
 @implementation TopViewController
@@ -37,6 +37,8 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    [self getExamData];
+    self.tableView.dataSource = self;
     [self.tableView registerNib:[UINib nibWithNibName:@"TACell" bundle:nil] forCellReuseIdentifier:@"Cell"];
     
     self.tableView.rowHeight = 180;
@@ -61,17 +63,20 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 50;
+    return [self.items count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     TACell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[TACell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
+
+    cell.titleLabel.text = [self.items[indexPath.row] objectForKey:@"exam_title"];
+    cell.categoryLabel.text = [self.items[indexPath.row] objectForKey:@"category_name"];
+    cell.content.text = [self.items[indexPath.row] objectForKey:@"exam_sentense"];
 
     // ボタンのタッチイベント
     [cell.toAnswer addTarget: self
@@ -104,6 +109,25 @@
     }];
 }
 
+/*
+ *  サーバーからJSON形式でデータを取得
+ */
+- (void)getExamData
+{
+    // カテゴリを引数に問題を取得するAPIを用意する
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", BaseURL, EXAM_ALL_SEL]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+        
+        NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+        // アプリデータの配列をプロパティに保持
+        self.items = [jsonDictionary objectForKey:@"data"];
+        
+        // TableView をリロード
+        [self.tableView reloadData];
+    }];
+}
 
 /*
 // Override to support conditional editing of the table view.
@@ -163,10 +187,13 @@
 {
     NSIndexPath *indexPath = [self indexPathForControlEvent:event];
     //NSIndexPath* indexPath = [self.tableView indexPathForCell:cell];
-        NSString *messageString = [NSString stringWithFormat:@"Button at section %d row %d was tapped.", indexPath.section, indexPath.row];
+    NSString *messageString = [NSString stringWithFormat:@"Button at section %ld row %ld was tapped.", (long)indexPath.section, (long)indexPath.row];
 
     NSLog(@"%@", messageString);
+    
     DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+    
+    detailViewController.examData = [self.items objectAtIndex:indexPath.row];
     
     // Push the view controller.
     [self.navigationController pushViewController:detailViewController animated:YES];
