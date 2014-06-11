@@ -19,6 +19,10 @@ NSString* const BaseURL = @"http://chie-no-wa.info/chieappscript/";
 NSString* const BaseURL = @"http://chie-no-wa.info/chieappscript/";
 #endif
 
+// answer定数
+NSString* const ANSWER_0 = @"0";
+NSString* const ANSWER_1 = @"1";
+
 // API名称
 NSString* const EXAM_ALL_SEL = @"exam_all_sel.php";
 

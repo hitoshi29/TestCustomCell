@@ -17,4 +17,8 @@
 extern NSString* const BaseURL;
 extern NSString* const EXAM_ALL_SEL;
 
+// answer定数
+extern NSString* const ANSWER_0;
+extern NSString* const ANSWER_1;
+
 @end

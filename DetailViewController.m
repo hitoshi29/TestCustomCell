@@ -9,6 +9,7 @@
 #import "DetailViewController.h"
 #import "ExplanationViewController.h"
 #import "NAModalSheet.h"
+#import "Constants.h"
 
 @interface DetailViewController ()
 @end
@@ -37,9 +38,6 @@
     swipe.direction = UISwipeGestureRecognizerDirectionRight;
     // スワイプ動作に必要な指は1本と指定する。
     swipe.numberOfTouchesRequired = 1;
-    
-    
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -80,16 +78,30 @@
     }];
 }
 
+- (IBAction)correctBtnDidPush:(id)sender {
+    if ([[NSString stringWithFormat:@"%@", [self.examData objectForKey:@"answer1"]] compare:ANSWER_0]) {
+        NSLog(@"正解");
+        // 処理を入れる
+    }else{
+        NSLog(@"不正解");
+        // 処理を入れる
+    }
+}
+
+- (IBAction)incorrectBtnDidPush:(id)sender {
+    if ([[NSString stringWithFormat:@"%@", [self.examData objectForKey:@"answer1"]] compare:ANSWER_1]) {
+        NSLog(@"正解");
+        // 処理を入れる
+    }else{
+        NSLog(@"不正解");
+        // 処理を入れる
+    }
+}
+
 #pragma mark NAModalSheetDelegate
 
 - (void)modalSheetTouchedOutsideContent:(NAModalSheet *)sheet
 {
-//    if (dismissOnOutsideTouchSwitch.on)
-//    {
-//        [sheet dismissWithCompletion:^{
-//            
-//        }];
-//    }
     [sheet dismissWithCompletion:^{
         
     }];

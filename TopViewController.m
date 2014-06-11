@@ -44,8 +44,8 @@
     self.tableView.rowHeight = 180;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
-    UIImage *backgroundImage = [UIImage imageNamed:@"background.png"];
-    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:backgroundImage];
+//    UIImage *backgroundImage = [UIImage imageNamed:@"background.png"];
+//    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:backgroundImage];
 }
 
 - (void)didReceiveMemoryWarning

@@ -14,6 +14,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *subCategoryName;
 @property (strong, nonatomic) IBOutlet UITextView *examSentense;
 - (IBAction)explanationBtnDidPush:(id)sender;
+- (IBAction)correctBtnDidPush:(id)sender;
+- (IBAction)incorrectBtnDidPush:(id)sender;
 
 
 //外部参照用プロパティ
