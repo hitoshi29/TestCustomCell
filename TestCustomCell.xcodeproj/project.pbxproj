@@ -24,7 +24,6 @@
 		042AE00F18DC3440006B1261 /* TACell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042AE00E18DC3440006B1261 /* TACell.xib */; };
 		042AE01618DC36D5006B1261 /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042AE01418DC36D5006B1261 /* TopViewController.m */; };
 		042AE01718DC36D5006B1261 /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042AE01518DC36D5006B1261 /* TopViewController.xib */; };
-		046EB0021948A1D20043EB35 /* test2.png in Resources */ = {isa = PBXBuildFile; fileRef = 046EB0011948A1D20043EB35 /* test2.png */; };
 		046EB00D1948A57C0043EB35 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 046EB0041948A57C0043EB35 /* arrow.png */; };
 		046EB00E1948A57C0043EB35 /* attachment.png in Resources */ = {isa = PBXBuildFile; fileRef = 046EB0051948A57C0043EB35 /* attachment.png */; };
 		046EB00F1948A57C0043EB35 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 046EB0061948A57C0043EB35 /* block.png */; };
@@ -34,6 +33,9 @@
 		046EB0131948A57C0043EB35 /* enter.png in Resources */ = {isa = PBXBuildFile; fileRef = 046EB00A1948A57C0043EB35 /* enter.png */; };
 		046EB0141948A57C0043EB35 /* file.png in Resources */ = {isa = PBXBuildFile; fileRef = 046EB00B1948A57C0043EB35 /* file.png */; };
 		046EB0151948A57C0043EB35 /* github.png in Resources */ = {isa = PBXBuildFile; fileRef = 046EB00C1948A57C0043EB35 /* github.png */; };
+		046EB0171951DF820043EB35 /* test2.png in Resources */ = {isa = PBXBuildFile; fileRef = 046EB0161951DF820043EB35 /* test2.png */; };
+		046EB0191951E5BD0043EB35 /* card_type1.png in Resources */ = {isa = PBXBuildFile; fileRef = 046EB0181951E5BD0043EB35 /* card_type1.png */; };
+		046EB01B1951F0880043EB35 /* solved.png in Resources */ = {isa = PBXBuildFile; fileRef = 046EB01A1951F0880043EB35 /* solved.png */; };
 		047B0F511926368900389BB0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047B0F501926368900389BB0 /* CFNetwork.framework */; };
 		047B0F531926369E00389BB0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047B0F521926369E00389BB0 /* SystemConfiguration.framework */; };
 		047B0F55192636A900389BB0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047B0F54192636A900389BB0 /* Security.framework */; };
@@ -91,7 +93,6 @@
 		042AE01318DC36D5006B1261 /* TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopViewController.h; sourceTree = "<group>"; };
 		042AE01418DC36D5006B1261 /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopViewController.m; sourceTree = "<group>"; };
 		042AE01518DC36D5006B1261 /* TopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopViewController.xib; sourceTree = "<group>"; };
-		046EB0011948A1D20043EB35 /* test2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test2.png; sourceTree = "<group>"; };
 		046EB0041948A57C0043EB35 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		046EB0051948A57C0043EB35 /* attachment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attachment.png; sourceTree = "<group>"; };
 		046EB0061948A57C0043EB35 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
@@ -101,6 +102,9 @@
 		046EB00A1948A57C0043EB35 /* enter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enter.png; sourceTree = "<group>"; };
 		046EB00B1948A57C0043EB35 /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file.png; sourceTree = "<group>"; };
 		046EB00C1948A57C0043EB35 /* github.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = github.png; sourceTree = "<group>"; };
+		046EB0161951DF820043EB35 /* test2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test2.png; sourceTree = "<group>"; };
+		046EB0181951E5BD0043EB35 /* card_type1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card_type1.png; sourceTree = "<group>"; };
+		046EB01A1951F0880043EB35 /* solved.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = solved.png; sourceTree = "<group>"; };
 		047B0F501926368900389BB0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		047B0F521926369E00389BB0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		047B0F54192636A900389BB0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -171,7 +175,6 @@
 				04D82608194058EA00B70134 /* Config */,
 				04A3734418F92C3700FE7516 /* DetailViewController.h */,
 				04A3734518F92C3700FE7516 /* DetailViewController.m */,
-				046EB0011948A1D20043EB35 /* test2.png */,
 				04A3734618F92C3700FE7516 /* DetailViewController.xib */,
 				042AE01818DC42C9006B1261 /* img */,
 				042AE01318DC36D5006B1261 /* TopViewController.h */,
@@ -254,6 +257,9 @@
 		042AE01818DC42C9006B1261 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				046EB01A1951F0880043EB35 /* solved.png */,
+				046EB0181951E5BD0043EB35 /* card_type1.png */,
+				046EB0161951DF820043EB35 /* test2.png */,
 				046EB0031948A57C0043EB35 /* icons */,
 				0408294E19475E3F008D6AC7 /* test.png */,
 				04D8262B1947402B00B70134 /* chienowa_footer.png */,
@@ -352,6 +358,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = wappen;
 				TargetAttributes = {
+					042ADFD818DC340B006B1261 = {
+						DevelopmentTeam = VZPNBVTF52;
+					};
 					042ADFF318DC340C006B1261 = {
 						TestTargetID = 042ADFD818DC340B006B1261;
 					};
@@ -383,9 +392,9 @@
 				04D8262219460CCA00B70134 /* correct.png in Resources */,
 				046EB0141948A57C0043EB35 /* file.png in Resources */,
 				042AE01718DC36D5006B1261 /* TopViewController.xib in Resources */,
-				046EB0021948A1D20043EB35 /* test2.png in Resources */,
 				04D8262A19473F2300B70134 /* logo.png in Resources */,
 				046EB00F1948A57C0043EB35 /* block.png in Resources */,
+				046EB0191951E5BD0043EB35 /* card_type1.png in Resources */,
 				04D8260719404C3E00B70134 /* background.png in Resources */,
 				046EB0151948A57C0043EB35 /* github.png in Resources */,
 				04D826111944718D00B70134 /* ExplanationViewController.xib in Resources */,
@@ -395,11 +404,13 @@
 				04D8262C1947402B00B70134 /* chienowa_footer.png in Resources */,
 				046EB0121948A57C0043EB35 /* download.png in Resources */,
 				046EB00E1948A57C0043EB35 /* attachment.png in Resources */,
+				046EB01B1951F0880043EB35 /* solved.png in Resources */,
 				046EB0111948A57C0043EB35 /* cube.png in Resources */,
 				046EB0101948A57C0043EB35 /* bluetooth.png in Resources */,
 				042ADFEF18DC340C006B1261 /* Images.xcassets in Resources */,
 				04D8262819473E3D00B70134 /* MenuViewController.xib in Resources */,
 				04D8262319460CCA00B70134 /* incorrect.png in Resources */,
+				046EB0171951DF820043EB35 /* test2.png in Resources */,
 				046EB00D1948A57C0043EB35 /* arrow.png in Resources */,
 				042AE00F18DC3440006B1261 /* TACell.xib in Resources */,
 				046EB0131948A57C0043EB35 /* enter.png in Resources */,
@@ -553,10 +564,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestCustomCell/TestCustomCell-Prefix.pch";
 				INFOPLIST_FILE = "TestCustomCell/TestCustomCell-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos7.1;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -566,10 +583,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestCustomCell/TestCustomCell-Prefix.pch";
 				INFOPLIST_FILE = "TestCustomCell/TestCustomCell-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos7.1;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
