@@ -43,5 +43,4 @@
         self.backgroundColor = [UIColor clearColor];  //非選択状態の色をセット
     }
 }
-
 @end

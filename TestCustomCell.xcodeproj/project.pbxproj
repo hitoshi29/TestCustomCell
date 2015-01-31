@@ -355,7 +355,7 @@
 		042ADFD118DC340B006B1261 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = wappen;
 				TargetAttributes = {
 					042ADFD818DC340B006B1261 = {

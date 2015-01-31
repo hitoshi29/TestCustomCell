@@ -48,16 +48,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)menuBtn:(id)sender {
-    NSLog(@"てst");
-    [self showGrid];
-    NSLog(@"てst2");    
-//    RNGridMenu *av = [[RNGridMenu alloc] initWithTitles:@[@"menu1",@"menu2"] ];
-//    av.delegate = self;
-//    [av showInViewController:self center:CGPointMake([[UIScreen mainScreen] bounds].size.width/2.f, [[UIScreen mainScreen] bounds].size.height/2.f)];
-}
+//- (IBAction)menuBtn:(id)sender {
+//    NSLog(@"てst");
+//    [self showGrid];
+//    NSLog(@"てst2");    
+////    RNGridMenu *av = [[RNGridMenu alloc] initWithTitles:@[@"menu1",@"menu2"] ];
+////    av.delegate = self;
+////    [av showInViewController:self center:CGPointMake([[UIScreen mainScreen] bounds].size.width/2.f, [[UIScreen mainScreen] bounds].size.height/2.f)];
+//}
 
 - (IBAction)listBtn:(id)sender {
+    [self showGrid];
 //    TopViewController *tvc = [[TopViewController alloc] initWithNibName:@"TopViewController" bundle:nil];
 //    
 //    // Push the view controller.

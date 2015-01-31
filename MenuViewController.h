@@ -10,6 +10,5 @@
 #import "RNGridMenu.h"
 
 @interface MenuViewController : UIViewController<RNGridMenuDelegate>
-- (IBAction)menuBtn:(id)sender;
 - (IBAction)listBtn:(id)sender;
 @end
